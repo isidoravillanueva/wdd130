@@ -1,6 +1,6 @@
 :root {
   --primary-color: #1b4965;   
-  --secondary-color: #bee9e8; 
+  --secondary-color: #000; 
   --accent1-color: #5fa8d3;   
   --accent2-color: #e9d8a6;   
   --heading-font: "Georgia", "Times New Roman", serif;
@@ -84,6 +84,10 @@ h2{
 }
 
 /*FOOTER*/
+footer p{
+    color: var(--secondary-color)
+}
+
 .socialmedia a{
     text-decoration: none;
 }
