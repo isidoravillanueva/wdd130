@@ -9,28 +9,50 @@
 
 }
 
-body {
-    font-size: 16px;
-    font-family: Roboto, Arial, sans-serif;
+header, .grid, footer{
+    max-width: 840px;
+    margin: 0 auto;
 }
 
-main {
-    max-width: 840px;
-}
+/*HEADER*/
 
 nav {
     background-color: var(--first-color);
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+main {
+    margin: 1rem;
+    grid-column: 2/3;
 }
 
 h1 {
     color: var(--first-color);
+    border-bottom: #000;
 }
 
 main img {
@@ -49,13 +71,9 @@ p {
 
 aside {
     width: 20rem;
-    text-align: center;
     position: relative;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside h2 {
@@ -64,6 +82,12 @@ aside h2 {
     left: 55px;
 }
 
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/*FOOTER*/
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
