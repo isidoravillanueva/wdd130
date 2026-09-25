@@ -1,51 +1,84 @@
 :root {
-  --primary-color: #1b4965;   
-  --secondary-color: #000; 
-  --accent1-color: #5fa8d3;   
-  --accent2-color: #e9d8a6;   
-  --heading-font: "Georgia", "Times New Roman", serif;
-  --body-font: Arial, Helvetica, sans-serif;
+    --primary-color: #1b4965;
+    --secondary-color: #000;
+    --accent1-color: #5fa8d3;
+    --accent2-color: #e9d8a6;
+    --heading-font: "Georgia", "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
-header, main, footer{
-    width: 840px;
-    margin: 0 auto;
-}
-
-h1, h2{
-    font-family: var(--heading-font);
-    color: var(--primary-color)
-}
-
-nav, p, article{
+nav,
+p,
+article {
     margin: 12px;
     padding: 5px;
 }
 
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
 /*MAIN DIV HERO*/
-.hero{
+.hero {
     position: relative;
     text-align: center;
 }
 
-.hero img{
+.hero img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-h1{
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color)
+}
+
+h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -56,26 +89,31 @@ h1{
     color: #fff;
 }
 
-.hero article{
+.hero article {
     position: absolute;
     bottom: 20px;
     background-color: var(--accent2-color);
 }
 
-.hero article img{
+.hero article img {
     float: right;
     width: 125px;
     margin-left: 15px;
 }
 
-.hero article p{
+.hero article p {
     color: var(--primary-color);
     text-align: left;
     margin: 0;
 }
 
 /*MAIN SECTIONS*/
-h2{
+
+section {
+    margin-top: 20px;
+}
+
+h2 {
     background-color: var(--primary-color);
     width: 100%;
     padding: 16px;
@@ -83,16 +121,56 @@ h2{
     color: #fff;
 }
 
+.history {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    display: inline-flex;
+}
+
+.history img {
+    width: 400px;
+    height: auto;
+}
+
+.adventure {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.adventure figure {
+    text-align: center;
+    flex: 1;
+}
+
+.adventure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.adventure figcaption {
+    margin-top: 8px;
+}
+
 /*FOOTER*/
-footer p{
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
     color: var(--secondary-color)
 }
 
-.socialmedia a{
+.socialmedia a {
     text-decoration: none;
 }
 
-.socialmedia a img{
+.socialmedia a img {
     width: 30px;
     height: auto;
 }
