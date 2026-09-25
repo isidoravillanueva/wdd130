@@ -1,7 +1,7 @@
 :root {
     --primary-color: #1b4965;
     --secondary-color: #000;
-    --accent1-color: #5fa8d3;
+    --accent1-color: #243b49;
     --accent2-color: #e9d8a6;
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -122,8 +122,6 @@ h2 {
 }
 
 .history {
-    display: grid;
-    grid-template-columns: auto 1fr;
     align-items: center;
     display: inline-flex;
 }
