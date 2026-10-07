@@ -1,0 +1,28 @@
+table {
+    border: 2px solid gray;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: 300px;
+    width: 500px;
+}
+
+td {
+    border: 1px solid gray;
+}
+
+thead th,
+tfoot tr {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    height: 35px;
+}
+
+tbody tr .league {
+    font-weight: bold;
+}
+
+tbody .grey {
+    background-color: lightgrey;
+}
