@@ -66,6 +66,23 @@ nav {
     text-align: center;
 }
 
+.hero-contact {
+    position: relative;
+    text-align: center;
+}
+
+.hero-contact h1 {
+    position: relative;
+    text-align: center;
+    opacity: 1;
+    background-color: var(--primary-color);
+}
+
+.contact {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
 .hero img {
     width: 100%;
     height: auto;
@@ -129,6 +146,57 @@ h2 {
 .history img {
     width: 400px;
     height: auto;
+}
+
+.map-form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+    max-height: 500px;
+}
+
+.map-form img {
+    width: 400px;
+    height: auto;
+}
+
+form.box {
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+input#name,
+input#email {
+    width: 300px;
+}
+
+.item-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item-box-input {
+    flex-direction: row;
+}
+
+.item-box-radio {
+    flex-direction: column;
+}
+
+form.box button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 .adventure {
