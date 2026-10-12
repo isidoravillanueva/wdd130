@@ -106,6 +106,10 @@ h1 {
     color: #fff;
 }
 
+.center {
+    top: 20px;
+}
+
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -158,6 +162,13 @@ h2 {
     max-height: 500px;
 }
 
+.box-form {
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
 .map-form img {
     width: 400px;
     height: auto;
@@ -173,6 +184,15 @@ form.box {
     max-width: 400px;
 }
 
+.button-form {
+    background-color: var(--accent1-color);
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
 input#name,
 input#email {
     width: 300px;
@@ -186,6 +206,7 @@ input#email {
 
 .item-box-input {
     flex-direction: row;
+    margin: 10px;
 }
 
 .item-box-radio {
@@ -221,6 +242,15 @@ form.box button {
     margin-top: 8px;
 }
 
+.trip a {
+    color: white;
+}
+
+.trip-tittle {
+    background-color: white;
+    color: black;
+}
+
 /*FOOTER*/
 footer {
     display: flex;
@@ -239,4 +269,40 @@ footer p {
 .socialmedia a img {
     width: 30px;
     height: auto;
+}
+
+/*TABLE*/
+table {
+    border: 2px solid gray;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: 300px;
+    width: 500px;
+}
+
+.table {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    border: 1px solid gray;
+}
+
+thead th,
+tfoot tr {
+    color: white;
+    background-color: var(--accent1-color);
+    font-weight: bold;
+    height: 35px;
+}
+
+tbody tr .league {
+    font-weight: bold;
+}
+
+tbody .grey {
+    background-color: lightgrey;
 }
